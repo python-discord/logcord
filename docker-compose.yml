@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  logcord:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      MONGO_HOST: mongodb://logcord:logcord@mongo:27017/logcord?authSource=admin
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/app/:ro
+
+  mongo:
+    image: mongo:4
+    environment:
+      MONGO_INITDB_DATABASE: logcord
+      MONGO_INITDB_ROOT_USERNAME: logcord
+      MONGO_INITDB_ROOT_PASSWORD: logcord
+    expose:
+      - 27017
