@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      MONGO_HOST: mongodb://logcord:logcord@mongo:27017/logcord?authSource=admin
+      MONGO_HOST: mongodb://mongo:27017/logcord
     ports:
       - 8000:8000
     volumes:
@@ -13,9 +13,5 @@ services:
 
   mongo:
     image: mongo:4
-    environment:
-      MONGO_INITDB_DATABASE: logcord
-      MONGO_INITDB_ROOT_USERNAME: logcord
-      MONGO_INITDB_ROOT_PASSWORD: logcord
     expose:
       - 27017
