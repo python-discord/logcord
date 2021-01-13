@@ -4,8 +4,9 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [packages]
-mongoengine = "0.22.1"
-hug = "2.6.1"
+hug = "~=2.6.1"
+pydantic = "~=1.7.3"
+pymongo = "~=3.11.2"
 
 [requires]
 python_version = "3.9"
