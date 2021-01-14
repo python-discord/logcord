@@ -1,14 +1,9 @@
-import os
-
 import hug
-from mongoengine import connect
 
-if not (MONGO_HOST := os.getenv('MONGO_HOST')):
-    raise RuntimeError('Missing `MONGO_HOST` environment variable..')
-
-connect(host=MONGO_HOST)
+from logcord import routes
 
 
-@hug.get()
-def health():
-    return {'status': 'ok'}
+@hug.extend_api()
+def add_routes():
+    """Adds the routes for this app."""
+    return [routes]
