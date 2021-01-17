@@ -6,6 +6,7 @@ from pydantic import BaseModel, Field
 
 class _StickerType(IntEnum):
     """The different format types of Discord stickers."""
+
     png = 0
     apng = 1
     lottie = 2
@@ -13,6 +14,7 @@ class _StickerType(IntEnum):
 
 class Sticker(BaseModel):
     """The model schema for a Discord sticker."""
+
     id: int = Field(ge=0)
     pack_id: int = Field(ge=0)
 
