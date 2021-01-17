@@ -8,6 +8,9 @@ hug = "~=2.6.1"
 pydantic = "~=1.7.3"
 pymongo = "~=3.11.2"
 
+[dev-packages]
+flake8 = "~=3.8"
+
 [requires]
 python_version = "3.9"
 
