@@ -1,9 +1,9 @@
 import hug
 
-from logcord import routes
+from logcord.routes import api, frontend
 
 
 @hug.extend_api()
 def add_routes():
     """Adds the routes for this app."""
-    return [routes]
+    return [api, frontend]

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+body {
+  background: #2C2F33;
+  color: white;
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  justify-content: center;
+}
+
+h1 {
+  padding: 10px;
+  background: #7289DA;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #23272A;
+}

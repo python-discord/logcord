@@ -5,6 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
+      LOGCORD_HOST: http://localhost:8000
       MONGO_HOST: mongodb://mongo:27017/logcord
     ports:
       - 8000:8000
