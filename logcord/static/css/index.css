@@ -16,6 +16,7 @@ main {
   border-radius: 2px;
   box-shadow: -1px 1px 3px 2px #23272A;
   margin: 0;
+  max-width: 1200px;
   position: absolute;
   text-align: center;
   top: 50%;
