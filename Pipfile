@@ -17,3 +17,4 @@ python_version = "3.9"
 
 [scripts]
 start = "hug -m logcord"
+lint = "flake8 ."
