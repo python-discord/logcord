@@ -1,24 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="theme-color" content="#7289DA">
-  <meta name="description" content="Logcord - Discord message logs">
-  
-  <meta name="og:title" content='Logcord'>
-  <meta name="og:image" content="/static/img/logo.png">
-  <meta name="og:description" content="Discord message logs!">
-  <meta name="og:url" content="{{ PUBLIC_URL }}">
-  
-  <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/static/css/index.css">
+{% extends "base.html" %}
 
-  <title>Logcord</title>
-</head>
+{% block head %}
+<link rel="stylesheet" href="/static/css/index.css">
+{% endblock %}
 
-<body>
-  <h1>This is Logcord.</h1>
-</body>
-</html>
+{% block body %}
+<main>
+  <div class="hero">
+    <h1>Logcord</h1>
+    <p>A web viewer for Discord message logs.</p>
+
+    <div class="hero__buttons">
+      <a href="#">Logs</a>
+      <a href="https://github.com/python-discord/logcord">GitHub</a>
+    </div>
+  </div>
+</main>
+{% endblock %}
