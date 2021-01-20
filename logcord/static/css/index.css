@@ -26,10 +26,6 @@ main {
   width: 70%;
 }
 
-.hero:hover {
-  box-shadow: -3px 3px 9px 6px #23272A;
-}
-
 .hero__buttons {
   margin: 2rem 0 3rem 0;
 }
