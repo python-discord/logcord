@@ -16,13 +16,13 @@ env.globals['PUBLIC_URL'] = LOGCORD_HOST
 
 
 @hug.static('/static')
-def static_files():
+def static_files() -> list[Path]:
     """Serves static files for this app."""
     return [Path('logcord') / 'static']
 
 
 @hug.get('/', output=hug.output_format.html)
-def index():
+def index() -> str:
     """Serves the homepage."""
     template = env.get_template('index.html')
     return template.render()
