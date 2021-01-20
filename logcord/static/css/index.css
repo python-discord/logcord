@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Uni Sans';
+  font-style: bold;
+  font-weight: 900;
+  src: url('/static/fonts/unisans.otf');
+}
+
+main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  background: #37393e;
+  border-radius: 2px;
+  box-shadow: -1px 1px 3px 2px #23272A;
+  margin: 0;
+  max-width: 1200px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transition: box-shadow 0.2s ease-in-out;
+  width: 70%;
+}
+
+.hero__buttons {
+  margin: 2rem 0 3rem 0;
+}
+
+.hero h1 {
+  color: #7289DA;
+  font-family: 'Uni Sans', sans-serif;
+  font-size: 64px;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 4px #23272A;
+  text-transform: uppercase;
+}
+
+.hero p {
+  color: white;
+  font-size: 18px;
+}
+
+.hero a {
+  background: #7289DA;
+  border-radius: 3px;
+  box-shadow: -1px 1px 1px 1px #23272A;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  transition: background 0.2s ease-in-out;
+  width: 80px;
+}
+
+.hero a:hover {
+  background: #4E5D94;
+}
+
+@media (max-width: 480px) {
+  .hero {
+    width: 90%;
+  }
+}
