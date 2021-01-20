@@ -9,6 +9,7 @@ from logcord.models.sticker import Sticker
 
 class Message(BaseModel):
     """The model schema for a Discord message."""
+
     id: int = Field(ge=0)
 
     author_id: int = Field(ge=0)
