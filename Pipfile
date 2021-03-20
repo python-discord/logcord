@@ -7,7 +7,7 @@ verify_ssl = true
 hug = "~=2.6.1"
 pydantic = "~=1.7.3"
 pymongo = "~=3.11.2"
-jinja2 = "~=2.11.2"
+jinja2 = "~=2.11.3"
 
 [dev-packages]
 flake8 = "~=3.8"
