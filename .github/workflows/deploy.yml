@@ -38,6 +38,6 @@ jobs:
         uses: Azure/k8s-deploy@v1
         with:
           manifests: |
-            logcord/deployment.yaml
+            namespaces/default/logcord/deployment.yaml
           images: 'ghcr.io/python-discord/logcord:${{ steps.sha_tag.outputs.tag }}'
           kubectl-version: 'latest'
